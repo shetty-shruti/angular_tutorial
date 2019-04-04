@@ -21,7 +21,8 @@ hero: Hero;
     private heroService: HeroService,
     private location: Location) { }
 
-  ngOnInit() {
+  ngOnInit() : void {
+    this.getHero();
   }
 
   getHero(): void {
